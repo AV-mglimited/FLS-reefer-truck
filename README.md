@@ -18,8 +18,8 @@
   </ol>
 </details>
 
-# FLS Landing Page Project
-This project is to create a landing page for FLS's Cold Fleet
+# FLS Reefer Truck Landing Page
+This project is to create a landing page for FLS's Reefer Truck
 
 ## Built With
 
