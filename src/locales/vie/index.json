@@ -1,6 +1,4 @@
 {
-  "seo": "Trang chủ",
-  "title": "Chào bạn",
   "header_enquiry": "Yêu cầu báo giá",
   "header_routes": "TUYẾN ĐƯỜNG",
   "header_services": "DỊCH VỤ",
@@ -63,5 +61,9 @@
   "banner_subheading3": "Giao nhận hàng lạnh xuyên các tỉnh nội địa Việt Nam và láng giềng: Trung Quốc, Campuchia, Lào",
   "banner_heading4": "LINH HOẠT NHẠY BÉN",
   "banner_subheading4": "Giải quyết nhanh sự cố phát sinh đảm bảo hàng lạnh được giao đúng hẹn",
-  "script_heading": "Liên hệ ngay để nhận báo giá!"
+  "script_heading": "Liên hệ ngay để nhận báo giá!",
+  "seo": {
+    "title": "Vận Tải Cont Lạnh Xuyên Á - Trung Quốc, Lào, Thái, Campuchia | FLS Group",
+    "description": "FLS Group cung cấp dịch vụ vận tải cont lạnh xuyên biên giới, chuẩn ISO, đội xe mới dưới 7 năm tuổi. Hải quan trọn gói, tài xế giàu kinh nghiệm, hỗ trợ 24/7."
+  }
 }

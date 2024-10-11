@@ -1,9 +1,8 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "fls-reefer-truck",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Quan Nguyen <quannguyen.jn@gmail.com>",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
@@ -14,10 +13,9 @@
     "dotenv": "^16.4.5",
     "flowbite-react": "^0.10.1",
     "gatsby": "^5.13.5",
-    "gatsby-plugin-feed": "^5.13.1",
     "gatsby-plugin-google-tagmanager": "^5.13.1",
     "gatsby-plugin-image": "^3.13.1",
-    "gatsby-plugin-manifest": "^5.13.1",
+    "gatsby-plugin-react-helmet": "^6.13.1",
     "gatsby-plugin-react-i18next": "^3.0.1",
     "gatsby-plugin-sass": "^6.13.1",
     "gatsby-plugin-sharp": "^5.13.1",
@@ -25,8 +23,6 @@
     "gatsby-remark-prismjs": "^7.13.1",
     "gatsby-remark-responsive-iframe": "^6.13.1",
     "gatsby-source-filesystem": "^5.13.1",
-    "gatsby-source-wordpress": "^7.13.4",
-    "gatsby-source-wordpress-experimental": "^7.0.6",
     "gatsby-transformer-remark": "^6.13.1",
     "gatsby-transformer-sharp": "^5.13.1",
     "i18next": "^23.13.0",
@@ -34,6 +30,7 @@
     "prismjs": "^1.29.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-helmet": "^6.1.0",
     "react-i18next": "^15.0.1",
     "sass": "^1.77.8",
     "sass-loader": "^16.0.0",
@@ -46,15 +43,6 @@
     "gatsby-plugin-postcss": "^6.13.1",
     "postcss": "^8.4.41",
     "prettier": "^2.8.8"
-  },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "0BSD",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
   "scripts": {
     "build": "gatsby build",
