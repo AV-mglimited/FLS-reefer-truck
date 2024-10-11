@@ -35,17 +35,19 @@ const SEO = ({ title, description, image, lang }) => {
     };
 
     return (
-        <Helmet htmlAttributes={{ lang: seo.lang }}>
+        <Helmet htmlAttributes={{lang: seo.lang}}>
             <title>{seo.title}</title>
-            <meta name="description" content={seo.description} />
-            <meta name="image" content={seo.image} />
+            <meta name="description" content={seo.description}/>
+            <meta name="image" content={seo.image}/>
 
             {/* OpenGraph tags */}
-            <meta property="og:url" content={`${siteUrl}`} />
-            <meta property="og:type" content="website" />
-            <meta property="og:title" content={seo.title} />
-            <meta property="og:description" content={seo.description} />
-            <meta property="og:image" content={seo.image} />
+            <meta property="og:url" content={`${siteUrl}`}/>
+            <meta property="og:type" content="website"/>
+            <meta property="og:title" content={seo.title}/>
+            <meta property="og:description" content={seo.description}/>
+            <meta property="og:image" content={seo.image}/>
+
+            <link rel="icon" type="image/png" href="/favicon.png"/>
         </Helmet>
     );
 };
