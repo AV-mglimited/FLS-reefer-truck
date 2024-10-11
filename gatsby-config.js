@@ -13,7 +13,7 @@ module.exports = {
     title: `Vận Tải Cont Lạnh Xuyên Á - Trung Quốc, Lào, Thái, Campuchia | FLS Group`,
     description: `FLS Group cung cấp dịch vụ vận tải cont lạnh xuyên biên giới, chuẩn ISO, đội xe mới dưới 7 năm tuổi. Hải quan trọn gói, tài xế giàu kinh nghiệm, hỗ trợ 24/7.`,
     siteUrl: `https://logistics.fls-group.com/`,
-    image: `${__dirname}/src/images/FLS-default-og-image.jpg`
+    image: `/images/FLS-default-og-image.jpg`
   },
   plugins: [
     `gatsby-plugin-postcss`,

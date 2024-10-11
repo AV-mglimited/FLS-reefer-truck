@@ -1,35 +1,31 @@
-import * as React from "react"
-import { Link, graphql } from "gatsby"
-import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
+import * as React from 'react';
+import { graphql } from 'gatsby';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 import ogImg from '../images/FLS-default-og-image.jpg';
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Layout from '../components/layout';
+import Seo from '../components/seo';
 
 const LandingPageIndex = ({ data, location }) => {
     const { t } = useTranslation();
 
-  return (
-    <Layout location={location}></Layout>
-  )
-}
+    return (
+        <Layout location={location}>
+            {/* Your page content */}
+        </Layout>
+    );
+};
 
-export default LandingPageIndex
-
-/**
- * Head export to define metadata for the page
- *
- * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
- */
+export default LandingPageIndex;
 
 export const Head = ({ data, pageContext }) => {
-    const language = pageContext.language || 'vie'; // Default to 'en' if undefined
-    const {t} = useTranslation();
+    const language = pageContext.language || 'vie';
 
+    const translationsData = data.translation.data;
+    const translations = JSON.parse(translationsData);
 
-    // Fetch translated strings for SEO metadata
-    const title = t('seo.title');
-    const description = t('seo.description');
+    const title = translations.seo.title;
+    const description = translations.seo.description;
 
     return (
         <Seo
@@ -54,23 +50,8 @@ export const pageQuery = graphql`
         }
       }
     }
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
-      nodes {
-        excerpt
-        fields {
-          slug
-        }
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          title
-          description
-        }
-      }
+    translation: locale(ns: { eq: "index" }, language: { eq: $language }) {
+      data
     }
   }
-`
+`;
