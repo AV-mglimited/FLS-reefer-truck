@@ -29,7 +29,7 @@ const SEO = ({ title, description, image, lang }) => {
         title: title || defaultTitle,
         description: description || defaultDescription,
         image: `${siteUrl}${image || defaultImage}`,
-        lang: lang || 'vi',
+        lang: lang || 'vie',
     }
 
     return (
