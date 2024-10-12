@@ -47,6 +47,12 @@ const SEO = ({ title, description, image, lang }) => {
             <meta property="og:description" content={seo.description}/>
             <meta property="og:image" content={seo.image}/>
 
+            {/* Twitter Card tags */}
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:title" content={title} />
+            <meta name="twitter:description" content={description} />
+            <meta name="twitter:image" content={seo.image} />
+
             <link rel="icon" type="image/png" href="/favicon.png"/>
         </Helmet>
     );
