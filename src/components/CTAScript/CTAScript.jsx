@@ -1,7 +1,6 @@
 import * as React from "react"
 import {useTranslation} from "gatsby-plugin-react-i18next";
 import {useState} from "react";
-import { Button, Checkbox, Label, TextInput } from "flowbite-react";
 
 const INITIAL_FORM = {
     contactName: '',
@@ -67,32 +66,24 @@ const CTAScript = () => {
     };
 
     const sendEmail = async (formData) => {
-        const response = await fetch(`/api/send-email`, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                Messages: [
-                    {
-                        From: { Email: process.env.GATSBY_MJ_SENDER_EMAIL, Name: "Digital Ads - FLS Cont Lạnh" },
-                        To: [{ Email: process.env.GATSBY_MJ_RECEIVER_EMAIL, Name: "Admin" }],
-                        Subject: "[Digital Ads - FLS Cont Lạnh] Khách hàng mới",
-                        HTMLPart: `
-                            <h3>New Consultation Request</h3>
-                            <p><strong>Name:</strong> ${formData.contactName}</p>
-                            <p><strong>Phone Number:</strong> ${formData.contactPhoneNumber}</p>
-                            <p><strong>Email:</strong> ${formData.contactEmail}</p>
-                            <p><strong>Request:</strong> ${formData.contactRequest}</p>
-                        `,
-                    },
-                ],
-            }),
-        });
+        try {
+            const response = await fetch('/api/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json', // Ensure this header is set
+                },
+                body: JSON.stringify({ formData }),
+            });
 
-        if (!response.ok) {
-            throw new Error("Failed to send email");
-            setIsSuccess(false);
+            if (!response.ok) {
+                throw new Error('Failed to send email');
+            }
+
+            const data = await response.json();
+            // Handle success (e.g., update state, display message)
+        } catch (error) {
+            console.error('Error sending email:', error);
+            // Handle error (e.g., display error message)
         }
     };
 
