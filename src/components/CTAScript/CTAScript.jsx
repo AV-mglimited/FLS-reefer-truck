@@ -67,7 +67,7 @@ const CTAScript = () => {
     };
 
     const sendEmail = async (formData) => {
-        const response = await fetch(`${process.env.GATSBY_MJ_URL}/api/v3.1/send`, {
+        const response = await fetch(`https://api.mailjet.com/api/v3.1/send`, {
             method: "POST",
             headers: {
                 "Authorization": "Basic " + btoa(`${process.env.GATSBY_MJ_APIKEY_PUBLIC}:${process.env.GATSBY_MJ_APIKEY_PRIVATE}`),
