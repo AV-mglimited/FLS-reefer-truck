@@ -67,13 +67,10 @@ const CTAScript = () => {
     };
 
     const sendEmail = async (formData) => {
-        const response = await fetch(`/api/v3.1/send`, {
+        const response = await fetch(`/api/send-email`, {
             method: "POST",
-            mode: 'cors',
             headers: {
-                "Authorization": "Basic " + btoa(`${process.env.GATSBY_MJ_APIKEY_PUBLIC}:${process.env.GATSBY_MJ_APIKEY_PRIVATE}`),
                 "Content-Type": "application/json",
-                'Access-Control-Allow-Origin': '*'
             },
             body: JSON.stringify({
                 Messages: [
