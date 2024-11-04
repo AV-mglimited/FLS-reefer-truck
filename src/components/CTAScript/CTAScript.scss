@@ -1,12 +1,20 @@
 .cta-script{
-  max-width: 100%;
-  background: url("../images/cta-script.jpg") no-repeat center;
-  h2{
-    word-break: break-word;
-    line-height: 128px;
-    @media screen and (max-width: 786px) {
-      padding: 0 20px;
-      font-size: 2rem;
-    }
+  box-shadow: -4px 8px 20px 4px #0000001A;
+  border: 1px solid #EBEBEB;
+  height: fit-content;
+  .text-build-content{
+    text-align: left;
+  }
+}
+.form-submitted-success{
+  margin-right: 80px;
+  @media only screen and (max-width: 768px){
+    margin-left: 50px;
+  }
+  @media only screen and (max-width: 375px){
+    margin-left: 100px;
+  }
+  h2,p{
+    color: white !important;
   }
 }

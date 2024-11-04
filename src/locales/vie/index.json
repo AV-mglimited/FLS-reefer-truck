@@ -65,5 +65,14 @@
   "seo": {
     "title": "Vận Tải Cont Lạnh Xuyên Á - Trung Quốc, Lào, Thái, Campuchia | FLS Group",
     "description": "FLS Group cung cấp dịch vụ vận tải cont lạnh xuyên biên giới, chuẩn ISO, đội xe mới dưới 7 năm tuổi. Hải quan trọn gói, tài xế giàu kinh nghiệm, hỗ trợ 24/7."
-  }
+  },
+  "contact_name_placeholder": "Tên*",
+  "contact_phone_placeholder": "Số điện thoại*",
+  "contact_email_placeholder": "Email*",
+  "contact_request_placeholder": "Yêu cầu khách hàng",
+  "contact_form_heading": "Yêu cầu tư vấn",
+  "contact_form_submit_button": "Gửi",
+  "contact_form_request_submitted": "Request submitted",
+  "contact_form_thank_you": "Thank you for reaching out.",
+  "contact_form_will_response": "We will respond as soon as possible."
 }

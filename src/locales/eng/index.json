@@ -65,5 +65,14 @@
   "seo": {
     "title": "Cross-Border Reefer Truck Service - China, Laos, Thailand, Cambodia | FLS Group",
     "description": "FLS Group offers ISO-certified cross-border refrigerator truck services with fleets all under 7 years old. Full customs clearance, experienced drivers, 24/7 tracking and assistance."
-  }
+  },
+  "contact_name_placeholder": "Name*",
+  "contact_phone_placeholder": "Phone Number*",
+  "contact_email_placeholder": "Email*",
+  "contact_request_placeholder": "Your Request",
+  "contact_form_heading": "Request for consultation",
+  "contact_form_submit_button": "Submit now",
+  "contact_form_request_submitted": "Request submitted",
+  "contact_form_thank_you": "Thank you for reaching out.",
+  "contact_form_will_response": "We will respond as soon as possible."
 }

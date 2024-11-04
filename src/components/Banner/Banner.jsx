@@ -105,16 +105,16 @@ const Banner = () => {
                                 />
                                 <div className="truck-overlay">
                                     <div className="truck-area area-1">
-                                        <div id="area1" className="truck-click-area" onClick={handleAreaClick}></div>
+                                        <div id="area1" className="truck-click-area" onMouseEnter={handleAreaClick}></div>
                                     </div>
                                     <div className="truck-area area-2">
-                                        <div id="area2" className="truck-click-area" onClick={handleAreaClick}></div>
+                                        <div id="area2" className="truck-click-area" onMouseEnter={handleAreaClick}></div>
                                     </div>
                                     <div className="truck-area area-3">
-                                        <div id="area3" className="truck-click-area" onClick={handleAreaClick}></div>
+                                        <div id="area3" className="truck-click-area" onMouseEnter={handleAreaClick}></div>
                                     </div>
                                     <div className="truck-area area-4">
-                                        <div id="area4" className="truck-click-area" onClick={handleAreaClick}></div>
+                                        <div id="area4" className="truck-click-area" onMouseEnter={handleAreaClick}></div>
                                     </div>
                                 </div>
                             </div>

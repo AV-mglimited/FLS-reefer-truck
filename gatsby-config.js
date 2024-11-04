@@ -93,4 +93,14 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
   ],
+  developMiddleware: app => {
+    app.use(
+        '/api',
+        require('http-proxy-middleware').createProxyMiddleware({
+          target: 'https://api.mailjet.com',
+          changeOrigin: true,
+          pathRewrite: { '^/api': '' },
+        })
+    );
+  },
 }
