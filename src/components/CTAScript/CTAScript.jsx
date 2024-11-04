@@ -67,7 +67,7 @@ const CTAScript = () => {
     };
 
     const sendEmail = async (formData) => {
-        const response = await fetch(`https://api.mailjet.com/api/v3.1/send`, {
+        const response = await fetch(`/api/v3.1/send`, {
             method: "POST",
             mode: 'cors',
             headers: {
