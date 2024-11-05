@@ -91,7 +91,7 @@ const CTAScript = () => {
     return (
         <div className={"container-main container-main--left pt-[80px]"} id={"cta-script"}>
             <div className={`one-side one-side--from-right cta-script bg-white p-8 shadow-lg border border-gray-200 ${isSuccess && "hidden"}`}>
-                <h2 className="heading-section mb-[30px]">
+                <h2 className="heading-section mb-[30px] uppercase">
                     {t("contact_form_heading")}
                 </h2>
 
