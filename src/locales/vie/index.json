@@ -12,7 +12,7 @@
   "routes_country_kh": "Campuchia",
   "routes_country_la": "Lào",
   "services_heading": "DỊCH VỤ",
-  "services_description": "Không còn lo lắng khi sử dụng dịch vụ Logistics tại FLS!\nDùng nội địa hay xuyên Á, chỉ cần sử dụng dịch vụ Chuỗi Vận Tải Cont Lạnh tại FLS bạn sẽ được hỗ trợ xuyên suốt từ A-Z!",
+  "services_description": "Vận chuyển hàng lạnh full cont, đáp ứng mọi nhu cầu hàng hoá khối lượng lớn đến rất lớn.\nKhông còn lo lắng khi sử dụng dịch vụ Logistics tại FLS!\nDùng nội địa hay xuyên Á, chỉ cần sử dụng dịch vụ Chuỗi Vận Tải Cont Lạnh tại FLS bạn sẽ được hỗ trợ xuyên suốt từ A-Z!",
   "services_first_service_item": "THỦ TỤC HẢI QUAN",
   "services_second_service_item": "XỬ LÝ, SẮP XẾP HÀNG",
   "services_third_service_item": "VẬN CHUYỂN",
@@ -72,7 +72,7 @@
   "contact_request_placeholder": "Yêu cầu khách hàng",
   "contact_form_heading": "Yêu cầu tư vấn",
   "contact_form_submit_button": "Gửi",
-  "contact_form_request_submitted": "Request submitted",
-  "contact_form_thank_you": "Thank you for reaching out.",
-  "contact_form_will_response": "We will respond as soon as possible."
+  "contact_form_request_submitted": "Gửi yêu cầu thành công",
+  "contact_form_thank_you": "Cảm ơn bạn đã liên hệ.",
+  "contact_form_will_response": "Chúng tôi sẽ liên hệ lại trong vòng 24h."
 }

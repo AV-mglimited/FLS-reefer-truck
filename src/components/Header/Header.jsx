@@ -45,7 +45,7 @@ const Header = ({ siteTitle }) => {
                 </div>
 
                 <div className={"flex items-center gap-5"}>
-                    <a href={"#footer"} className={"bg-[#0068B0] px-[18px] py-[12px] rounded-[8px] shadow-[0px 1px 2px 0px #0000000D] text-[16px]"}>{t("header_enquiry")}</a>
+                    <a href={"#cta-script"} className={"bg-[#0068B0] px-[18px] py-[12px] rounded-[8px] shadow-[0px 1px 2px 0px #0000000D] text-[16px]"}>{t("header_enquiry")}</a>
                     <ul className="languages">
                         {languages.map((lng) => (
                             <li key={lng}>
