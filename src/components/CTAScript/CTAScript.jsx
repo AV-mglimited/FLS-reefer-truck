@@ -67,19 +67,22 @@ const CTAScript = () => {
 
     const sendEmail = async (formData) => {
         try {
+            console.log("Sending email with formData:", formData);  // Log form data before sending
             const response = await fetch('/api/send-email', {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json',
+                    'Content-Type': 'application/json', // Ensure this header is set
                 },
                 body: JSON.stringify({ formData }),
             });
 
+            console.log("Response status:", response.status); // Log response status
             if (!response.ok) {
                 throw new Error(`Failed to send email: ${response.status}`);
             }
 
             const data = await response.json();
+            console.log("Response data:", data); // Log response data
         } catch (error) {
             console.error('Error sending email:', error);
         }
