@@ -15,6 +15,8 @@ module.exports = async (req, res) => {
     }
 
     try {
+        console.log("Sending email with formData:", formData);
+
         const mailjetResponse = await axios.post(
             'https://api.mailjet.com/v3.1/send',
             {
@@ -51,6 +53,9 @@ module.exports = async (req, res) => {
                 },
             }
         );
+
+        console.log("Mailjet response status:", mailjetResponse.status);
+        console.log("Mailjet response data:", mailjetResponse.data);
 
         if (mailjetResponse.status === 200) {
             return res.status(200).json({ message: 'Email sent successfully' });
