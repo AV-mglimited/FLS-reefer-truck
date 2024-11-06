@@ -6,7 +6,8 @@ const INITIAL_FORM = {
     contactName: '',
     contactPhoneNumber: '',
     contactEmail: '',
-    contactRequest: ''
+    contactRequest: '',
+    contactCompany: ''
 }
 
 const CTAScript = () => {
@@ -104,7 +105,7 @@ const CTAScript = () => {
                                 value={form.contactName}
                                 onChange={handleChange}
                                 placeholder={t("contact_name_placeholder")}
-                                className="w-full h-12 p-4 border border-gray-400 rounded-tr-[20px] rounded-bl-none bg-white text-gray-500 font-bold text-[18px]"
+                                className="w-full h-12 p-4 border border-gray-400 rounded-tr-[20px] rounded-bl-none bg-white text-gray-500 font-bold"
                             />
                         </div>
                         <div className="w-1/2">
@@ -122,18 +123,30 @@ const CTAScript = () => {
                         </div>
                     </div>
 
-                    <div className="mb-4">
-                        <input
-                            type="email"
-                            name="contactEmail"
-                            value={form.contactEmail}
-                            onChange={handleChange}
-                            placeholder={t("contact_email_placeholder")}
-                            className="w-full h-12 p-4 border border-gray-400 rounded-tr-[20px] rounded-bl-none bg-white text-gray-500 font-bold"
-                        />
-                        {errors.contactEmail && (
-                            <p className="text-red-500 text-sm">{errors.contactEmail}</p>
-                        )}
+                    <div className="flex gap-4 mb-4">
+                        <div className="w-1/2">
+                            <input
+                                type="email"
+                                name="contactEmail"
+                                value={form.contactEmail}
+                                onChange={handleChange}
+                                placeholder={t("contact_email_placeholder")}
+                                className="w-full h-12 p-4 border border-gray-400 rounded-tr-[20px] rounded-bl-none bg-white text-gray-500 font-bold"
+                            />
+                            {errors.contactEmail && (
+                                <p className="text-red-500 text-sm">{errors.contactEmail}</p>
+                            )}
+                        </div>
+                        <div className="w-1/2">
+                            <input
+                                type="text"
+                                name="contactCompany"
+                                value={form.contactCompany}
+                                onChange={handleChange}
+                                placeholder={t("contact_company_placeholder")}
+                                className="w-full h-12 p-4 border border-gray-400 rounded-tr-[20px] rounded-bl-none bg-white text-gray-500 font-bold"
+                            />
+                        </div>
                     </div>
 
                     <div className="mb-4">
