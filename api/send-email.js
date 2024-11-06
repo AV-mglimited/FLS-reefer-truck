@@ -28,8 +28,12 @@ module.exports = async (req, res) => {
                         },
                         To: [
                             {
-                                Email: process.env.MJ_RECEIVER_EMAIL,
-                                Name: 'Admin',
+                                Email: process.env.MJ_RECEIVER_EMAIL_1,
+                                Name: 'Huong Vo',
+                            },
+                            {
+                                Email: process.env.MJ_RECEIVER_EMAIL_2,
+                                Name: 'Thanh Vu',
                             },
                         ],
                         Subject: '[Digital Ads - FLS Cont Lạnh] Khách hàng mới',
@@ -38,6 +42,7 @@ module.exports = async (req, res) => {
                             <p><strong>Name:</strong> ${formData.contactName}</p>
                             <p><strong>Phone Number:</strong> ${formData.contactPhoneNumber}</p>
                             <p><strong>Email:</strong> ${formData.contactEmail}</p>
+                            <p><strong>Company Name:</strong> ${formData.contactCompany}</p>
                             <p><strong>Request:</strong> ${formData.contactRequest}</p>
                           `,
                     },
