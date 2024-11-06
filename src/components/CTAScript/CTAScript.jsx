@@ -70,23 +70,20 @@ const CTAScript = () => {
             const response = await fetch('/api/send-email', {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json', // Ensure this header is set
+                    'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({ formData }),
             });
 
             if (!response.ok) {
-                throw new Error('Failed to send email');
+                throw new Error(`Failed to send email: ${response.status}`);
             }
 
             const data = await response.json();
-            // Handle success (e.g., update state, display message)
         } catch (error) {
             console.error('Error sending email:', error);
-            // Handle error (e.g., display error message)
         }
     };
-
 
     return (
         <div className={"container-main container-main--left pt-[80px]"} id={"cta-script"}>
