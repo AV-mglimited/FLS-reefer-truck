@@ -67,7 +67,7 @@
     "description": "FLS Group cung cấp dịch vụ vận tải cont lạnh xuyên biên giới, chuẩn ISO, đội xe mới dưới 7 năm tuổi. Hải quan trọn gói, tài xế giàu kinh nghiệm, hỗ trợ 24/7."
   },
   "contact_name_placeholder": "Tên*",
-  "contact_company_placeholder": "Tên công ty",
+  "contact_company_placeholder": "Tên công ty*",
   "contact_phone_placeholder": "Số điện thoại*",
   "contact_email_placeholder": "Email*",
   "contact_request_placeholder": "Yêu cầu khách hàng",

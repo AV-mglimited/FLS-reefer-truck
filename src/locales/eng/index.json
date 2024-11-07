@@ -67,7 +67,7 @@
     "description": "FLS Group offers ISO-certified cross-border refrigerator truck services with fleets all under 7 years old. Full customs clearance, experienced drivers, 24/7 tracking and assistance."
   },
   "contact_name_placeholder": "Name*",
-  "contact_company_placeholder": "Company Name",
+  "contact_company_placeholder": "Company Name*",
   "contact_phone_placeholder": "Phone Number*",
   "contact_email_placeholder": "Email*",
   "contact_request_placeholder": "Your Request",

@@ -42,6 +42,7 @@ const CTAScript = () => {
 
     const isFormValid = () => {
         return form.contactName.trim() !== '' &&
+            form.contactCompany.trim() !== '' &&
             form.contactPhoneNumber.trim() !== '' &&
             form.contactEmail.trim() !== '' &&
             !errors.contactPhoneNumber &&
