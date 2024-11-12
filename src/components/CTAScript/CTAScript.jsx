@@ -69,7 +69,6 @@ const CTAScript = () => {
 
     const sendEmail = async (formData) => {
         try {
-            console.log("Sending email with formData:", formData);  // Log form data before sending
             const response = await fetch('/api/send-email', {
                 method: 'POST',
                 headers: {
@@ -78,13 +77,11 @@ const CTAScript = () => {
                 body: JSON.stringify({ formData }),
             });
 
-            console.log("Response status:", response.status); // Log response status
             if (!response.ok) {
                 throw new Error(`Failed to send email: ${response.status}`);
             }
 
             const data = await response.json();
-            console.log("Response data:", data); // Log response data
         } catch (error) {
             console.error('Error sending email:', error);
         }
@@ -162,6 +159,7 @@ const CTAScript = () => {
 
                     <div className="flex justify-center">
                         <button
+                            id={"ctaContactFormBtn"}
                             type="submit"
                             className={`w-full h-12 ${isFormValid() ? 'bg-[#0068B0] text-white' : 'bg-gray-400 text-gray-200'} font-extrabold text-[25px] uppercase rounded-tr-[20px]`}
                             disabled={!isFormValid()}
