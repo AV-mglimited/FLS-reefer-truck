@@ -35,6 +35,10 @@ module.exports = async (req, res) => {
                                 Email: process.env.MJ_RECEIVER_EMAIL_2,
                                 Name: 'Thanh Vu',
                             },
+                            {
+                                Email: process.env.MJ_RECEIVER_EMAIL_3,
+                                Name: 'Cong Nguyen',
+                            },
                         ],
                         Subject: '[Digital Ads - FLS Cont Lạnh] Khách hàng mới',
                         HTMLPart: `
