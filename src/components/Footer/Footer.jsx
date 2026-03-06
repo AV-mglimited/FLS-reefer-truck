@@ -1,8 +1,6 @@
 import * as React from "react";
 import facebookIcon from '../../images/facebook-icon.png';
 import zaloIcon from '../../images/zalo-icon.png';
-import zaloVCT from '../../images/zalo-vct.png';
-import zaloLH from '../../images/zalo-lh.png';
 import youtubeIcon from '../../images/youtube-icon.png';
 import linkedinIcon from '../../images/linkedin-icon.png';
 import {useTranslation} from "gatsby-plugin-react-i18next";
@@ -37,21 +35,8 @@ const Footer = () => {
                             <a href={"tel:+842854496084"}>{t("footer_description_telephone")}</a> <br/>
                             <span className="hide-on-desktop">
                                 Zalo:
-                                <a href={"https://zalo.me/0987003278"}>
-                                    <span><span className="underline">+84 987003278</span> (Vũ Công Thành)</span>
-                                    <img
-                                        className="zalo-qr z-10 object-contain"
-                                        src={zaloVCT}
-                                        alt="zalo-vct"
-                                    />
-                                </a>
-                                <a href={"https://zalo.me/0933028639"}>
-                                    <span><span className="underline">+84 933028639</span> (Linh Huỳnh)</span>
-                                    <img
-                                        className="zalo-qr z-10 object-contain"
-                                        src={zaloVCT}
-                                        alt="zalo-vct"
-                                    />
+                                <a href={"https://zalo.me/0778562404"}>
+                                    <span><span className="underline">+84 778562404</span> (Công Nguyễn)</span>
                                 </a> <br/>
                             </span>
                             <a href={"mailto:office.vn@fls-group.com"}>{t("footer_description_email")}</a>
@@ -60,7 +45,7 @@ const Footer = () => {
                             <a href={"https://www.facebook.com/FLSGroup1993"} target="_blank" className={"self-center"}>
                                 <img src={facebookIcon} alt={""}/>
                             </a>
-                            <a href={"https://zalo.me/0987003278"} className={"self-center"}>
+                            <a href={"https://zalo.me/0778562404"} className={"self-center"}>
                                 <img src={zaloIcon} alt={""}/>
                             </a>
                             <a href={"https://www.youtube.com/@FLSGroup"} target="_blank" className={"self-center"}>
@@ -72,21 +57,8 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className={"footer-description--contact w-1/2 flex flex-col justify-start"}>
-                        <a href={"https://zalo.me/0987003278"}>
-                            <span> Vũ Công Thành <br/> <span className="underline">+84 987003278</span> </span>
-                            <img
-                                className="zalo-qr z-10 object-contain"
-                                src={zaloVCT}
-                                alt="zalo-vct"
-                            />
-                        </a>
-                        <a href={"https://zalo.me/0933028639"}>
-                            <span> Linh Huỳnh <br/> <span className="underline">+84 933028639</span> </span>
-                            <img
-                                className="zalo-qr z-10 object-contain"
-                                src={zaloLH}
-                                alt="zalo-lh"
-                            />
+                        <a href={"https://zalo.me/0778562404"}>
+                            <span> Công Nguyễn <br/> <span className="underline">+84 778562404</span> </span>
                         </a>
                     </div>
                 </div>
