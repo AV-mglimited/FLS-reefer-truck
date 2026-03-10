@@ -3,6 +3,7 @@ import facebookIcon from '../../images/facebook-icon.png';
 import zaloIcon from '../../images/zalo-icon.png';
 import youtubeIcon from '../../images/youtube-icon.png';
 import linkedinIcon from '../../images/linkedin-icon.png';
+import zaloQr from '../../images/zalo-qr.jpeg';
 import {useTranslation} from "gatsby-plugin-react-i18next";
 
 
@@ -56,9 +57,12 @@ const Footer = () => {
                             </a>
                         </div>
                     </div>
-                    <div className={"footer-description--contact w-1/2 flex flex-col justify-start"}>
+                    <div className={"footer-description--contact w-1/2 flex flex-row items-start gap-4"}>
                         <a href={"https://zalo.me/0778562404"}>
                             <span> Công Nguyễn <br/> <span className="underline">+84 778562404</span> </span>
+                        </a>
+                        <a href={"https://zalo.me/0778562404"} target="_blank">
+                            <img src={zaloQr} alt={"Zalo QR Code"} className={"w-[120px] h-[120px] object-contain"}/>
                         </a>
                     </div>
                 </div>
