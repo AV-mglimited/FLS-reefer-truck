@@ -28,8 +28,8 @@ module.exports = async (req, res) => {
                         },
                         To: [
                             {
-                                Email: process.env.MJ_RECEIVER_EMAIL_1,
-                                Name: 'Huong Vo',
+                                Email: 'av@mg.limited',
+                                Name: 'Ashley Van',
                             },
                             {
                                 Email: process.env.MJ_RECEIVER_EMAIL_2,
