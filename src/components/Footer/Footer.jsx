@@ -63,9 +63,6 @@ const Footer = () => {
                             <a href={"https://zalo.me/0778562404"} className="underline">+84 778562404</a> <br/>
                             <a href={"mailto:cong.nguyen@fls-group.com"} className="underline">cong.nguyen@fls-group.com</a>
                         </span>
-                        <a href={"https://zalo.me/0778562404"} target="_blank">
-                            <img src={zaloQr} alt={"Zalo QR Code"} className={"w-[120px] h-[120px] object-contain"}/>
-                        </a>
                     </div>
                 </div>
             </div>
