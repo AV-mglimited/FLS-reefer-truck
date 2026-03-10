@@ -59,7 +59,7 @@ const Footer = () => {
                     </div>
                     <div className={"footer-description--contact w-1/2 flex flex-row items-start gap-4"}>
                         <a href={"https://zalo.me/0778562404"}>
-                            <span> Công Nguyễn <br/> <span className="underline">+84 778562404</span> </span>
+                            <span> Công Nguyễn <br/> <span className="underline">+84 778562404</span> <br/> <a href={"mailto:cong.nguyen@fls-group.com"} className="underline">cong.nguyen@fls-group.com</a> </span>
                         </a>
                         <a href={"https://zalo.me/0778562404"} target="_blank">
                             <img src={zaloQr} alt={"Zalo QR Code"} className={"w-[120px] h-[120px] object-contain"}/>
