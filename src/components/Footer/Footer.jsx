@@ -33,7 +33,7 @@ const Footer = () => {
                             {t("footer_description_company_name")} <br/>
                             <a className={"underline"} href={"https://maps.app.goo.gl/L9Rf4AVUTQgTifyr6"} target="_blank">{t("footer_description_geo")}</a> <br/>
                             {t("footer_description_address")} <br/>
-                            <a href={"tel:+842854496084"}>{t("footer_description_telephone")}</a> <br/>
+                            <a href={"tel:+84778562404"}>{t("footer_description_telephone")}</a> <br/>
                             <span className="hide-on-desktop">
                                 Zalo:
                                 <a href={"https://zalo.me/0778562404"}>
